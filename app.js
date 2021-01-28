@@ -1,18 +1,23 @@
-alert('Welcome to our page');
+var name = '';
+
+var userName = prompt('Hello! What is your name?')
+console.log(userName);
+alert('Welcome '+ userName);
+
 
 var message = '';
 
-var internetSpeed = prompt('What is your internet speed in mbps?');
+var internetSpeed = prompt('What is your internet speed in Mbps?');
 console.log(internetSpeed);
 
 if(internetSpeed < 50 && internetSpeed > 0){
-    message = "Too slow, you can't use this service";
+    message = "Too slow, you can't use these services";
 }else if (internetSpeed >100){
-    message ='You are the master come in';
+    message ='Great speed, please come in';
 }else if (internetSpeed >=50){
-    message = 'That is a good speed you can proceed'
+    message = 'Nice, you can proceed'
 }else {
-    message = 'please refresh and put a NUMBER'
+    message = 'Please refresh and put a NUMBER'
 }
 alert(message);
 document.write('<h2>'+message+'</h2>');
@@ -29,10 +34,10 @@ use for loop in putting more than onr image at the page
 
 
 
-var type = prompt('What type of vieos do you like, movies or tv');
+var type = prompt('What do you prefer, movies or tv?');
 
 while(type !=='tv' && type !== 'movies'){
-    type= prompt('please choose tv or movies')
+    type= prompt('Please Choose tv or movies')
 }
 
 var pic = '';
@@ -51,7 +56,7 @@ document.write (pic);
 var result2='';
 result2 = '<img src = "Photos/video.png" width="250px"/>'
 
-var videos =prompt('How many videos do you want?');
+var videos =prompt('How many videos do you want watch today?');
 
 for(var i = 0; i<videos; i++){
     document.write(result2);
