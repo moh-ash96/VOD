@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="style.css">
         <title>
             Video on demand - Netflix
 
@@ -11,17 +12,21 @@
             <h1>Video on Demand</h1>
             <nav>
                 <ul>
-                    <li><a href="https://karasneh94.github.io/vod/index.html">Home</a></li>
-                    <li><a href="https://karasneh94.github.io/vod/shahid.html">Shahid VIP</a></li>
-                    <li><a href="https://mohamedalimouazen.github.io/vod/">Iflix</a></li>
-                    <li><a href="https://shahdmusleh.github.io/vod/index.html">Hulu</a> </li>
+                    <li id="home"><a id="home-a" href="https://karasneh94.github.io/vod/index.html">Home</a></li>
+                    <li id="shahid"><a id="shahid-a" href="https://karasneh94.github.io/vod/shahid.html">Shahid VIP</a></li>
+                    <li id="iflix"><a id="iflix-a" href="https://mohamedalimouazen.github.io/vod/">Iflix</a></li>
+                    <li id="hulu"><a id="hulu-a" href="https://shahdmusleh.github.io/vod/index.html">Hulu</a> </li>
                 </ul>
             </nav>
-            <h2>Netflix</h2>
+            
         </header>
-        <hr>
+        
         <main>
-            <img src="https://yt3.ggpht.com/ytc/AAUvwngDBuChyi5LOiP4Od1GOqyczL6Sx9I-Ujk6rCP0Sg=s900-c-k-c0x00ffffff-no-rj" width="250 px"/>
+            <h2 id="netflix">Netflix</h2>
+            <hr>
+            <img src="https://yt3.ggpht.com/ytc/AAUvwngDBuChyi5LOiP4Od1GOqyczL6Sx9I-Ujk6rCP0Sg=s900-c-k-c0x00ffffff-no-rj"
+            width="200px"/>
+           
             <p>
                 Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
                 You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. And also you can watch anywhere, anytime, on an unlimited number of devices. It works on personal computers or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
@@ -29,7 +34,7 @@
 
 
             </p>
-            <table style="width: 100%;">
+            <table id="plans">
                 <tr> 
                     <th>Plan</th>
                     <th>Monthly Price</th>
@@ -53,9 +58,13 @@
         
             </table>
         </main>
-        <hr>
+        <!-- <hr> -->
         <footer>
-            &copy;2021 <a href="https://github.com/moh-ash96">Mohammad Ashour</a>
+            <a id="github" href="https://github.com/moh-ash96">Mohammad Ashour</a>
+            <br>
+            <br>
+            &copy;2021
+            
         </footer>
         <script src="app.js"></script>
     </body>
